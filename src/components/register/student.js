@@ -9,7 +9,7 @@ const Student = () => {
     sname: "",
     email: "",
     mobile: "",
-    phone: "",
+    name: "",
   });
 
   const handleChange = (e) => {
@@ -21,8 +21,8 @@ const Student = () => {
   };
 
   const student = () => {
-    const { sname, email, mobile, phone } = students;
-    if (sname && email && mobile && phone) {
+    const { sname, email, mobile, name } = students;
+    if (sname && email && mobile && name) {
       axios.post("http://localhost:8080/student", students).then((res) => {
         alert(res.data.message);
         history.push("/");
@@ -37,7 +37,7 @@ const Student = () => {
       <div className="student mt-5 row">
         <h2>REGISTER NOW</h2>
         <br />
-        <label className="col-md-3 mt-3">School Name</label>
+        <label className="col-3 mt-3">School Name</label>
         <input
           type="text"
           name="sname"
@@ -47,18 +47,17 @@ const Student = () => {
         />
         <br />
         <br />
-        <label className="col-md-3 mt-3">Contact Person</label>
+        <label className="col-3 mt-3">Contact Person</label>
         <input
-          type="tel"
-          pattern="[6789][0-9]{9}"
+          type="text"
           className="col-md-8"
-          name="phone"
-          value={students.phone}
+          name="name"
+          value={students.name}
           onChange={handleChange}
         />
         <br />
         <br />
-        <label className="col-md-3 mt-3">Email</label>
+        <label className="col-3 mt-3">Email</label>
         <input
           className="col-md-8"
           type="email"
@@ -68,11 +67,12 @@ const Student = () => {
         />
         <br />
         <br />
-        <label className="col-md-3 mt-3">Phone</label>
+        <label className="col-3 mt-3">Phone</label>
         <input
           className="col-md-8"
           type="tel"
           name="mobile"
+          pattern="[6789][0-9]{9}"
           value={students.mobile}
           onChange={handleChange}
         />

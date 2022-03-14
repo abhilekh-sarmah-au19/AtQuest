@@ -4,7 +4,6 @@ h4 {
 }
 .section4 {
   margin-top: 50px;
-  height: 135vh;
 }
 .flip-card {
   background-color: transparent;
@@ -59,7 +58,7 @@ label {
 }
 
 .flip-card-back {
-  background: #dbecd4;
+  background-color: rgb(13, 31, 13);
   color: white;
   transform: rotateY(180deg);
   z-index: 1;

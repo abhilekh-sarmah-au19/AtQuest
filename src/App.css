@@ -25,4 +25,20 @@ h2 {
 }
 .para {
   text-align: justify;
+  font-size: 1.9rem;
+}
+@media (max-width: 767px) {
+  .para {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1080px) {
+  .para {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .para {
+    font-size: 0.9rem;
+  }
 }

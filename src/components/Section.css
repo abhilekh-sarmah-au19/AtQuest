@@ -4,6 +4,7 @@ h1 {
 }
 ul li {
   border-radius: 25px;
+  margin: 25px 45px 5px 45px;
 }
 ul li h2 {
   padding: 20px 20px 0px 20px;
@@ -21,4 +22,81 @@ ul .hv:hover {
 }
 .bg {
   background-color: #dbecd4;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    padding: 0px 0px 20px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  ul li h2 {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    padding: 0px 0px 20px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  ul li h2 {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  p {
+    padding: 0px 0px 20px 20px;
+    font-size: 8px;
+    font-family: "Montserrat", sans-serif;
+  }
+  ul li h2 {
+    font-size: 10px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  ul li {
+    border-radius: 25px;
+    margin: 25px 45px 5px 45px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  p {
+    padding: 0px 0px 20px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  ul li h2 {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  p {
+    padding: 0px 0px 20px 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+  }
+  ul li h2 {
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+  }
 }

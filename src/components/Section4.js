@@ -9,14 +9,14 @@ export default function Section4() {
   return (
     <div className="section4">
       <h1 className="container d-flex justify-content-start">Who does what?</h1>
-      <div className="row d-flex justify-content-center">
-        <div className="flip-card col-md-6" tabIndex="0">
+      <div className="row d-flex rows justify-content-center">
+        <div className="flip-card column col-md-6" tabIndex="0">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="card imgs">
                 <img src={bg1} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h4 className="d-flex jsutify-content-start fw-bolder">
+                <div className="card-body cb">
+                  <h4 className="d-flex h4 jsutify-content-start fw-bolder">
                     STUDENTS
                   </h4>
                 </div>
@@ -27,7 +27,7 @@ export default function Section4() {
             </div>
           </div>
         </div>
-        <div className="flip-card col-md-6" tabIndex="0">
+        <div className="flip-card column col-md-6" tabIndex="0">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <h3 className="text-dark"></h3>
@@ -41,13 +41,13 @@ export default function Section4() {
             </div>
           </div>
         </div>
-        <div className="flip-card col-md-6" tabIndex="0">
+        <div className="flip-card column col-md-6" tabIndex="0">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="card imgs">
                 <img src={bg2} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h4 className="d-flex jsutify-content-start fw-bolder">
+                <div className="card-body cb">
+                  <h4 className="d-flex h4 jsutify-content-start fw-bolder">
                     SUMMER NATURALLY TEAM
                   </h4>
                 </div>
@@ -58,13 +58,13 @@ export default function Section4() {
             </div>
           </div>
         </div>
-        <div className="flip-card col-md-6" tabIndex="0">
+        <div className="flip-card column col-md-6" tabIndex="0">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <div className="card imgs">
                 <img src={bg3} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h4 className="d-flex jsutify-content-start fw-bolder">
+                <div className="card-body cb">
+                  <h4 className="d-flex h4 jsutify-content-start fw-bolder">
                     PARENTS
                   </h4>
                 </div>

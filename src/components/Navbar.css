@@ -2,6 +2,74 @@
 nav {
   font-family: "Josefin Sans", sans-serif;
 }
-p {
-  font-family: "Montserrat", sans-serif;
+
+.navbar {
+  width: 100%;
+}
+.nav-link {
+  color: #113018 !important;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.navbar-brand {
+  color: black !important;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .img-fluids {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .img-fluids {
+    height: 100px;
+    width: 150px;
+  }
+  .nav-link {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .img-fluids {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .img-fluids {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .img-fluids {
+    height: 100px;
+    width: 150px;
+  }
 }

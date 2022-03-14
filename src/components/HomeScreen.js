@@ -9,6 +9,11 @@ import card3 from "../assets/images/card-logo3.png";
 import card4 from "../assets/images/card-logo4.png";
 import Section3 from "./Section3";
 import Section4 from "./Section4";
+import Footer from "./Footer";
+import card6 from "../assets/images/card-logo7.png";
+import card7 from "../assets/images/card-logo6.png";
+import card5 from "../assets/images/card-logo5.png";
+import card8 from "../assets/images/card-logo8.png";
 
 export default function HomeScreen() {
   return (
@@ -52,16 +57,105 @@ export default function HomeScreen() {
             </div>
           </div>
         </h4>
+
         <h1 className="container d-flex justify-content-start pt-4 pb-4">
           <b>How Summer, Naturally! Works </b>
         </h1>
-        <section>
-          <div className="containers">
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src={card5} class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 className="fs-1 h text-light text-center ">
+                  Get investigative and curious. Do your research and find out
+                  what went into its making
+                  <br />
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src={card6} class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 className="fs-1 h text-light text-center">
+                  Get investigative and curious. Do your research and find out
+                  what went into its making
+                  <br />
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src={card7} class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 className="fs-1 h text-dark text-center">
+                  Get investigative and curious. Do your research and find out
+                  what went into its making
+                  <br />
+                </h3>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src={card8} class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h3 className="fs-1 h text-dark text-center">
+                  Get investigative and curious. Do your research and find out
+                  what went into its making
+                  <br />
+                </h3>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <section>
           <div className="containers">
             <div className="cards">
               <div className="content">
@@ -70,8 +164,9 @@ export default function HomeScreen() {
                 </div>
                 <div className="contentBx">
                   <h3>
+                    Get investigative and curious. Do your research and find out
+                    what went into its making
                     <br />
-                    <span></span>
                   </h3>
                 </div>
               </div>
@@ -97,10 +192,14 @@ export default function HomeScreen() {
             <div className="cards">
               <div className="content">
                 <div className="imgBx">
-                  <img src={card3} alt="" />
+                  <img className="img3" src={card3} alt="" />
                 </div>
                 <div className="contentBx">
-                  <h3></h3>
+                  <h3>
+                    Get investigative and curious. Do your research and find out
+                    what went into its making
+                    <br />
+                  </h3>
                 </div>
               </div>
               <ul className="sci">
@@ -113,7 +212,11 @@ export default function HomeScreen() {
                   <img src={card4} alt="" />
                 </div>
                 <div className="contentBx">
-                  <h3></h3>
+                  <h3>
+                    Get investigative and curious. Do your research and find out
+                    what went into its making
+                    <br />
+                  </h3>
                 </div>
               </div>
               <ul className="sci">
@@ -131,6 +234,11 @@ export default function HomeScreen() {
         <section>
           <div className="p-4">
             <Section4 />
+          </div>
+        </section>
+        <section>
+          <div className="pt-4">
+            <Footer />
           </div>
         </section>
       </div>
