@@ -28,10 +28,10 @@ export default function HomeScreen() {
       >
         <img src={bg} className="img-fluid" alt="" />
         <h4 id="scrollspyHeading1" className="sc p-4">
-          <h1 className="container d-flex justify-content-start pt-4 pb-4">
+          <h1 className="container d-flex justify-content-start h1 pt-4 pb-4">
             <b>Aligned with the United Nations Vision for A Better Planet</b>
           </h1>
-          <div className="card bg-light mb-3">
+          <div className="card bg-light cardst mb-3">
             <div className="row g-0">
               <div className="col-md-4">
                 <img
@@ -40,7 +40,7 @@ export default function HomeScreen() {
                   alt=""
                 />
               </div>
-              <div className="col-md-8">
+              <div className="col-md-8 pere">
                 <div className="card-body">
                   <p className="card-text para">
                     Summer, Naturally! is more than just your average summer
@@ -58,7 +58,7 @@ export default function HomeScreen() {
           </div>
         </h4>
 
-        <h1 className="container d-flex justify-content-start pt-4 pb-4">
+        <h1 className="container d-flex h-1 justify-content-start pt-4 pb-4">
           <b>How Summer, Naturally! Works </b>
         </h1>
         <div
@@ -66,12 +66,12 @@ export default function HomeScreen() {
           class="carousel carousel-dark slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          <div class="carousel-indicators indicators inidic">
             <button
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="0"
-              class="active"
+              class="active indi"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -80,11 +80,13 @@ export default function HomeScreen() {
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="1"
               aria-label="Slide 2"
+              className="indi"
             ></button>
             <button
               type="button"
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="2"
+              className="indi"
               aria-label="Slide 3"
             ></button>
             <button
@@ -92,6 +94,7 @@ export default function HomeScreen() {
               data-bs-target="#carouselExampleDark"
               data-bs-slide-to="3"
               aria-label="Slide 4"
+              className="indi"
             ></button>
           </div>
           <div class="carousel-inner">
@@ -232,13 +235,8 @@ export default function HomeScreen() {
         </section>
 
         <section>
-          <div className="p-4">
+          <div>
             <Section4 />
-          </div>
-        </section>
-        <section>
-          <div className="pt-4">
-            <Footer />
           </div>
         </section>
       </div>

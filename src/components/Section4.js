@@ -8,7 +8,9 @@ import Student from "../components/register/student";
 export default function Section4() {
   return (
     <div className="section4">
-      <h1 className="container d-flex justify-content-start">Who does what?</h1>
+      <h1 className="container d-flex justify-content-start h2">
+        Who does what?
+      </h1>
       <div className="row d-flex rows justify-content-center">
         <div className="flip-card column col-md-6" tabIndex="0">
           <div className="flip-card-inner">

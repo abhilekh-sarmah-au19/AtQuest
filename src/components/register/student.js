@@ -34,9 +34,8 @@ const Student = () => {
 
   return (
     <div className="container1">
-      <div className="student mt-5 row">
-        <h2>REGISTER NOW</h2>
-        <br />
+      <div className="student row">
+        <h2 className="regi">REGISTER NOW</h2>
         <label className="col-3 mt-3">School Name</label>
         <input
           type="text"
@@ -44,6 +43,7 @@ const Student = () => {
           className="col-md-8"
           value={students.sname}
           onChange={handleChange}
+          placeholder="Enter School"
         />
         <br />
         <br />
@@ -53,6 +53,7 @@ const Student = () => {
           className="col-md-8"
           name="name"
           value={students.name}
+          placeholder="Person Name"
           onChange={handleChange}
         />
         <br />
@@ -62,6 +63,7 @@ const Student = () => {
           className="col-md-8"
           type="email"
           name="email"
+          placeholder="@email"
           value={students.email}
           onChange={handleChange}
         />
@@ -72,11 +74,11 @@ const Student = () => {
           className="col-md-8"
           type="tel"
           name="mobile"
+          placeholder="Enter Phone number"
           pattern="[6789][0-9]{9}"
           value={students.mobile}
           onChange={handleChange}
         />
-        <br />
         <br />
 
         <div className="button mt-4" onClick={student}>

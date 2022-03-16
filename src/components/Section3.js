@@ -4,10 +4,10 @@ import "./Section.css";
 export default function Section3() {
   return (
     <div className="section3">
-      <h1 className="container d-flex justify-content-start pt-5">
+      <h1 className="container d-flex h2 justify-content-start pt-5">
         <b> Why should your school join in?</b>
       </h1>
-      <br />
+
       <div className="columns bg-light">
         <ul className="list-group">
           <br />
