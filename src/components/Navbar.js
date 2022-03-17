@@ -75,26 +75,19 @@ export default function Navbar() {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Services
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Experiences
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
-              </li>
-            </ul>
+            <a class="nav-link active" aria-current="page" href="#">
+              Home
+            </a>
+
+            <a class="nav-link" href="#">
+              Services
+            </a>
+
+            <a class="nav-link" href="#">
+              Experiences
+            </a>
+
+            <a class="nav-link">Contact Us</a>
           </div>
         </div>
       </nav>
